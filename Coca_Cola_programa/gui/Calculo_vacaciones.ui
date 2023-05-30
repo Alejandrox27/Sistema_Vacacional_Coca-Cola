@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Coca_cola_principal</class>
+ <widget class="QMainWindow" name="Coca_cola_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>664</width>
+    <height>519</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>664</width>
+    <height>519</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Principal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+</string>
+  </property>
+  <widget class="QWidget" name="wgd_principal">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);</string>
+   </property>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>661</width>
+      <height>472</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="lay_ver_principal" stretch="1,0,3,0">
+     <property name="leftMargin">
+      <number>35</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>35</number>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="lay_bienvenida">
+       <item>
+        <widget class="QLabel" name="lbl_coca_cola_logo">
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/cct/Coca_Cola_logo_white.png);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_Bienvenida">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);
+font: 75 26pt &quot;Berlin Sans FB&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Bienvenido _</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_titulo">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 23pt &quot;Berlin Sans FB&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Datos para el calculo de las vacaciones</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="lay_hor_datos">
+       <item>
+        <layout class="QVBoxLayout" name="lay_ver_Nombre" stretch="0,1,0,1,0,1">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_nombre_completo">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Nombre completo:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txt_nombre_completo">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_apellido_paterno">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Apellido paterno:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txt_apellido_paterno">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_apellido_materno_2">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Apellido materno:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="txt_apellido_materno">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="spacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="lay_ver_departamento">
+         <property name="spacing">
+          <number>15</number>
+         </property>
+         <property name="topMargin">
+          <number>42</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lbl_departamento">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Seleccione su departamento:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cbx_departamento">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Atención al cliente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Departamento de logística</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Departamento de gerencia</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_antiguedad">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Seleccione su antigüedad</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cbx_antiguedad">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1 año de servicio</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2 a 6 años de servicio</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>más de 6 años de servicio</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbl_resultado">
+           <property name="styleSheet">
+            <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Resultado del calculo:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="txt_resultado">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(255, 0, 0);
+font: 87 10pt &quot;Arial Black&quot;;</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="lbl_copyright">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;Berlin Sans FB&quot;;</string>
+       </property>
+       <property name="text">
+        <string>©2017 The Coca-Cola Company | Todos los derechos reservados</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="mnb_barra_menu">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>664</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(217, 0, 0);
+font: 87 8pt &quot;Arial Black&quot;;
+color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QMenu" name="mnu_opciones">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>opciones</string>
+    </property>
+    <widget class="QMenu" name="menuCambiar_Fondo">
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>Cambiar Fondo</string>
+     </property>
+     <addaction name="actionRojo"/>
+     <addaction name="actionMorado"/>
+     <addaction name="actionNegro"/>
+    </widget>
+    <addaction name="menuCambiar_Fondo"/>
+    <addaction name="actionSalir"/>
+    <addaction name="actionNuevo"/>
+   </widget>
+   <widget class="QMenu" name="menuVacaciones">
+    <property name="title">
+     <string>Vacaciones</string>
+    </property>
+    <addaction name="actionCalcular"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="styleSheet">
+     <string notr="true">border-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 0, 0, 255), stop:0.479904 rgba(255, 0, 0, 255), stop:0.522685 rgba(255, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="actionCreador"/>
+   </widget>
+   <addaction name="mnu_opciones"/>
+   <addaction name="menuVacaciones"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRojo">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Rojo</string>
+   </property>
+  </action>
+  <action name="actionMorado">
+   <property name="text">
+    <string>Morado</string>
+   </property>
+  </action>
+  <action name="actionNegro">
+   <property name="text">
+    <string>Negro</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionCalcular">
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </action>
+  <action name="actionCreador">
+   <property name="text">
+    <string>Creador</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="imagenes/Coca_cola_logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
